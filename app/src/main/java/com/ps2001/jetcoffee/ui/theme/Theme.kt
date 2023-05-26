@@ -3,6 +3,8 @@ package com.ps2001.jetcoffee.ui.theme
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material.darkColors
+import androidx.compose.material.lightColors
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -14,6 +16,18 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+
+private val DarkColorPalette = darkColors(
+    primary = LightCoffeeBrown,
+    primaryVariant = LightCoffeeBrown,
+    secondary = Teal200
+)
+
+private val LightColorPalette = lightColors(
+    primary = CoffeeBrown,
+    primaryVariant = CoffeeBrown,
+    secondary = Teal200
+)
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
